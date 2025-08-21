@@ -1,0 +1,10 @@
+p = 0.99;
+k = 1:1000;
+geomSer = p.^k;
+trueVal = 1/(1-p);
+trueSer = ones(1,1000)*trueVal;
+
+figure
+ylim([0  trueVal+10])
+plot(k,trueVal, 'r-','LineWidth',2)
+plot(k,cumsum(geomSer),'b-','LineWidth',2)
