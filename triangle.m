@@ -1,11 +1,12 @@
 %% Preamble
-% Program name: Triangle.m
-% Author:       Timothy Tarter
-% Date:         08/26/2005
-% Purpose:      Ask the user for three vertices of a triangle in
-% \mathbb{R}^2, x then y. Calculate the lengths of the sides, the
-% perimeter, then the area. Print the perimeter and the area to the screen.
-% Then, plot the triangle. 
+% Program name:     Triangle.m
+% Author:           Timothy Tarter
+% Due Date:         08/28/2005
+% Purpose:          Ask the user for three vertices of a triangle in
+%                   \mathbb{R}^2, x then y. Calculate the lengths of 
+%                   the sides, the perimeter, then the area. Print 
+%                   the perimeter and the area to the screen. Then, 
+%                   plot the triangle. 
 
 %% Variables
 % xi, yi are the coordinate entries of point i, respectively
@@ -52,7 +53,7 @@ tri_y = [y1 y2 y3 y1];
 
 %Plot the triangle
 figure
-plot(tri_x,tri_y,'g--',LineWidth=0.5)
-title('Triangle')
+plot(tri_x,tri_y,'g--',LineWidth=1)
+title('Triangle Plot')
 xlabel('x-coordinate')
 ylabel('y-coordinate')
