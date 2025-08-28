@@ -13,11 +13,4 @@ c = input('c ');
 disc = b^2 - 4*a*c;
 
 if (disc < 0)
-    fprintf('Zero real roots')
-elseif (disc == 0)
-    fprintf('One real root', -b/(2*a))
-else
-    fprintf('Two Real Roots: \n')
-    fprintf('Root 1 %4.1f\n', (-b - sqrt(disc))/(2*a))
-    fprintf('Root 2 %4.1f\n', (-b + sqrt(disc))/(2*a))
-end
+    fprintf('Zero real roots' )
