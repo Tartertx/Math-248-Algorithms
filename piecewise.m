@@ -2,7 +2,8 @@
 % Program name:     piecewise.m
 % Author:           Timothy Tarter
 % Due Date:         08/28/2005
-% Purpose:          This program does a piecewise function
+% Purpose:          This program implements a piecewise function according
+%                   to an in-class rubric
 
 x = input('What x value? ');
 y = input('What x value? ');
