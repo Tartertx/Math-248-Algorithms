@@ -1,0 +1,9 @@
+%% Preamble
+% Program name:     quadratic.m
+% Author:           Timothy Tarter
+% Due Date:         08/28/2005
+% Purpose:          This program determines the number and type of roots for a given
+%                   quadratic function f(x) = ax^2 + bx + c. The user defines a, b, and c and
+%                   the function outputs the number and type of roots, as well as any real
+%                   roots.
+
