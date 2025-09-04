@@ -11,7 +11,8 @@
 %% Code
 
 % set matrix size and compute
-n = 6;
+tic
+n = 1000;
 A = zeros(n);
 for i = 1:n
     for j = 1:n
@@ -21,3 +22,4 @@ end
 
 % display it
 disp(A)
+toc
