@@ -4,7 +4,7 @@
 % Due Date:         09/11/2025
 % Purpose:          Take in the n-value the user wants of the sequence,
 %                   then the first two terms of the sequence, then 
-%                   calculate the rest of the sequence. 
+%                   calculate the rest of the sequence and plot it. 
 
 %% Variables
 % n is the number of digits of the sequence to compute
