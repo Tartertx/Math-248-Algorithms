@@ -1,0 +1,34 @@
+%% Preamble
+% Program name:     fpi.m
+% Author:           Timothy Tarter
+% Due Date:         10/06/2025
+% Purpose:          Build a fixed point iteration function 
+
+%% Variables
+% y is the output of the function for g(x)
+% x is the row vector of FPI entries
+% tol is the error tolerance
+% n is the maximum number of trials we are willing to have
+% fixedpoint is the estiamted fixed points
+
+%% Code
+function fixedpoint = fpi(x0, tol, n)
+    function y=g(x)
+        y = 2.^(-x);
+    end
+    format longG
+    x = zeros(n,2);
+    x(1,1)=x0;
+    x(1,2)=0;
+    for i = 1:n
+        x(i+1,1) = g(x(i,1));
+        x(i+1,2)=i;
+        if abs(x(i,1)-x(i+1,1)) <= tol*x(i+1,1)
+            x=x(1:i,:);
+            break
+        end
+    end
+    fpidata = x(:,1);
+    iteration = x(:,2);
+    fixedpoint = table(iteration,fpidata);
+end
