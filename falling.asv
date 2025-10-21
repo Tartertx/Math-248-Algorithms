@@ -14,9 +14,7 @@
 % gravity = gravity constant
 % maxIterations = the maximum number of iterations the user wants run
 % newtonTable = the table output from the newton function
-% time = the array for making the plot, specifically the X axis
-% height = the height at time t of the ball (for the plot)
-% all of the variables in the Newton function have been left the same
+% 
 
 %% Code
 function falling()
@@ -33,7 +31,7 @@ function falling()
     
     %run the newton code and output the answer to the command line
     newtonTable = newton(t0, 0.001, maxIterations);
-    fprintf('\nThe estimated number of seconds it takes the ball to hit the ground will be: %4.3f\n',newtonTable{3,2});
+    fprintf('\nThe estimated number of seconds it takes the ball to hit the ground will be: %4.2f\n',newtonTable{3,2});
 
     % make the matrix of time against height
     time = linspace(0,newtonTable{3,2},100);
