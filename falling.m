@@ -66,7 +66,7 @@ function falling()
 
 
 
-        while (abs(x(i) - x(i-1)) >= tol * abs(x(i))) %NOTE FOR DR CAPALDI: this was already in terms of absolute error when I downloaded it?
+        while (abs(x(i) - x(i-1)) >= tol) %* abs(x(i))) <- this makes it absolute error.
             i = i + 1; % Increment counter
             if (i > n) % Hit max iterations?
                 fprintf('The method failed after %s iterations.\n', num2str(n))
